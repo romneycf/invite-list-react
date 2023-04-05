@@ -1,0 +1,6 @@
+.title {
+  color: var(--color-text-primary);
+  font-size: var(--font-size-title);
+  font-family: var(--font-family);
+  padding: var(--padding-xl);
+}

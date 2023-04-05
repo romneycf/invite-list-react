@@ -1,0 +1,31 @@
+:root {
+    --font-family: "Robot", sans-serif;
+    --font-size-navbar: 18px;
+    --font-size-title: 32px;
+    
+    --background-color-primary: #14213D;
+    --background-color-secondary: #3d1414;
+
+    --color-text-primary: #E5E5E5;
+    --color-text-scondary: #000000;
+    
+    --color-primary: #cdb4db;
+    --color-primary-dark: #ac60d8;
+    --color-primary-uber: #7c1cb4;
+    
+    --color-secondary: #ffc8dd;
+    --color-secondary-dark: #ffafcc;
+    --color-secondary-uber: #ff7ead;
+
+    --color-tertirary: #bde0fe;
+    --color-tertirary-dark: #90cbff;
+    --color-tertirary-uber: #55b0ff;
+  
+    --border-radius: 6px;
+    
+    --padding-xs: 4px 6px;
+    --padding-md: 8px 12px;
+    --padding-lg: 12px 16px;
+    --padding-xl: 20px 20px;
+  }
+  

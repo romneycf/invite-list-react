@@ -1,33 +1,27 @@
 .App {
-  text-align: center;
+  min-height: 100vh;
+  min-width: 100vw;
+  font-family: var(--font-family);
+  background-color: var(--background-color-primary);
 }
 
-.App nav {
+.Navbar {
   display: flex;
-  justify-content: space-between;
-  background-color: #333333;
-  color: #ffffff;
-  padding: 0.5rem 1rem;
+  justify-content: center;
+  font-size: var(--font-size-navbar);
+  background-color: var(--color-primary-uber);
+  color: var(--color-text-secondary);
+  padding: var(--padding-xl);
+  border: 1px solid var(--color-primary);
 }
 
-.App nav a {
-  color: #ffffff;
+.Navbar a {
+  color: var(--color-text-primary);
   text-decoration: none;
   margin-left: 1rem;
   margin-right: 1rem;
 }
 
-.Converter {
-  text-align: left;
-  margin: 1rem 4rem;
-}
-
-.Converter label {
-  display: block;
-  margin-bottom: 1rem;
-}
-
-.Converter input {
-  display: block;
-  margin-top: 0.5rem;
+.Navbar a:hover {
+  transform: scale(1.3) translateY(-5%);
 }
