@@ -1,33 +1,19 @@
 import "./App.css";
-import { BrowserRouter, Link, Routes, Route } from "react-router-dom";
-import Home from "./components/pages/Home";
-import Guests from "./components/pages/guests/Guests";
+import { Link, Routes, Route, RouterProvider } from "react-router-dom";
+import Home from "./shared/components/pages/Home";
+import Guests from "./shared/components/pages/guests/Guests";
 import { useState } from "react";
-import Login from "./components/pages/login/Login";
+
+import { Router } from "./routes";
+import { AuthProvider } from "./modules/auth";
+import { useAuth } from "./modules/auth/hooks/useAuth";
 
 function App() {
-  const [token, setToken] = useState();
-
-  if (token) {
-    return (
-      <div className="App">
-        <Login setToken={setToken} />
-      </div>
-    );
-  }
-
   return (
     <div className="App">
-      <BrowserRouter>
-        <nav className="Navbar">
-          <Link to="/">Home</Link>
-          <Link to="/guests">Guestes</Link>
-        </nav>
-        <Routes>
-          <Route index element={<Home />} />
-          <Route path="/guests" element={<Guests />} />
-        </Routes>
-      </BrowserRouter>
+      <AuthProvider>
+        <RouterProvider router={Router} />
+      </AuthProvider>
     </div>
   );
 }
